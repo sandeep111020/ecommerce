@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".register2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewdisplay"/>
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ccp_autoDetectCountry="true"
+        android:id="@+id/countrycode"
+        app:ccp_showFlag="true"
+        app:ccp_showNameCode="true"
+        app:ccp_showFullName="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone number"
+        android:id="@+id/phonenumber_getotp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getotp"
+        android:onClick="onclickgetotpbutton"
+        android:text="GET OTP"/>
+
+
+
+</LinearLayout>

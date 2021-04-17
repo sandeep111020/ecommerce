@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slogan_category"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add new Product"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/color_primary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books and Dresses"
+        android:layout_below="@id/slogan_category"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/books_and_dress_text"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/books_and_dress_text"
+       android:id="@+id/linear1_category_layout"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
+       android:gravity="center"
+       android:layout_marginTop="10dp">
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/books"
+           android:id="@+id/books"
+           android:layout_margin="5dp"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/sports"
+           android:id="@+id/clothes"
+           android:layout_margin="5dp"/>
+
+
+
+   </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toys"
+        android:layout_below="@id/linear1_category_layout"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/toys_text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toys_text"
+        android:id="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/board_and_other_games"
+            android:id="@+id/board_and_other_games"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/motessori_wodden_toys"
+            android:id="@+id/montessori_wooden_toys"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/activity_and_large_toys"
+            android:id="@+id/activity_and_large_toys"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:id="@+id/linear3_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/learning_and_education_toys"
+            android:id="@+id/Learning_and_Education_Toys"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/infant_and_toddler_toys"
+            android:id="@+id/Infant_and_Toddler_Toys"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pretend_and_play_toys"
+            android:id="@+id/PretendPlayToys"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
